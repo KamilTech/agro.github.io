@@ -432,7 +432,8 @@ nav ul li a:hover {
     font-size: 12px;
 }
 
-.button a {
+.button a,
+.contacte button {
     letter-spacing: 2px;
     text-transform: uppercase;
     -webkit-text-decoration-line: none;
@@ -444,7 +445,8 @@ nav ul li a:hover {
     background: none;
 }
 
-.button a:hover {
+.button a:hover,
+.contacte button:hover {
     cursor: pointer;
     background: #bf9b30;
     color: white;
@@ -697,18 +699,31 @@ nav ul li a:hover {
     box-sizing: border-box;
     width: 100%;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-top: 20px;
     border: 1px solid #e3e3e3;
     font-family: 'Playfair Display', serif;
 }
 
+.error {
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    margin-top: 5px;
+    margin-left: 5px;
+    color: #e21010;
+    display: none;
+}
+
+#submitButton:disabled {
+    cursor: not-allowed;
+}
+
 .contact-form .button {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .contact-form-control .contact-insc {
     font-family: 'Playfair Display', serif;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     color: #8b8b8b;
     line-height: 1.6em;
     font-size: 32px;
@@ -1187,8 +1202,6 @@ nav ul li a:hover {
     margin-top: 100px;
     margin-bottom: 200px;
 }
-
-
 
 @import url(https://fonts.googleapis.com/css?family=Montserrat:200);
 .snip1577 {

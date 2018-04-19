@@ -5,7 +5,6 @@ $(document).ready(function () {
             $("nav ul").toggleClass("showing");
         });
     });
-
     // Scrolling Effect
     $(window).on("scroll", function () {
         if ($(window).scrollTop()) {
@@ -14,6 +13,7 @@ $(document).ready(function () {
             $('nav').removeClass('black');
         }
     });
+    // Gallery
     $('.owl-carousel').owlCarousel({
         loop: true,
         margin: 10,
@@ -36,8 +36,7 @@ $(document).ready(function () {
         }
     });
 
-    var $button = $('#menu-btn');
-
+    let $button = $('#menu-btn');
     $('.menu-icon').on('click', function (e) {
         e.preventDefault();
         if ($button.hasClass('open')) {
@@ -49,4 +48,16 @@ $(document).ready(function () {
         }
     });
 
+    $(document).on('click', 'a[href^="#"]', function (event) {
+        event.preventDefault();
+
+        if ($button.hasClass('open')) {
+            $button.removeClass('open');
+            $button.addClass('close');
+            $("nav ul").toggleClass("showing");
+        }
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top - 80
+        }, 500);
+    });
 });

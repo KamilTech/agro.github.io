@@ -15,7 +15,7 @@
 
 <body>
 
-    <header>
+    <header id="one">
         <nav>
             <div class="menu-icon">
                 <div id="menu-btn">
@@ -31,12 +31,12 @@
 
             <div class="menu">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">news</a></li>
-                    <li><a href="#">some</a></li>
+                    <li><a href="#one">Home</a></li>
+                    <li><a href="#two">About</a></li>
+                    <li><a href="#three">Room</a></li>
+                    <li><a href="#four">Contact</a></li>
+                    <li><a href="#five">Video</a></li>
+                    <li><a href="#six">Gallery</a></li>
                 </ul>
             </div>
         </nav>
@@ -46,10 +46,11 @@
                 <h1>Agroturystyka</h1>
                 <h1>Łosień</h1>
                 <p>In our hotel you will find everything you need to enjoy your vacation</p>
-                <a href="#">Zobacz więcej</a>
+                <a href="#two">Zobacz więcej</a>
             </div>
         </div>
     </header>
+    <div id="two"></div>
     <section class="first-section">
         <div class="welcome">
             <div class="welcome-inscription">ŁOSIEŃ</div>
@@ -71,12 +72,12 @@
                 <div class="story">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence. When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary.
                 </div>
                 <div class="button">
-                    <a href="#">Zobacz więcej</a>
+                    <a href="#three">Zobacz więcej</a>
                 </div>
             </div>
         </div>
     </section>
-    <section class="second-section-box">
+    <section id="three" class="second-section-box">
         <div class="second-section">
             <div class="second-story">
                 <div class="h1">Sprawdź nasze </div>
@@ -112,7 +113,7 @@
         </div>
     </section>
     <section>
-        <div class="third-section">
+        <div id="six" class="third-section">
             <h1>Nasza galeria</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti sit dicta quae natus quasi ratione quis id, tenetur atque blanditiis aperiam mollitia enim corporis ex praesentium reprehenderit.</p>
 
@@ -174,7 +175,7 @@
             </div>
         </div>
     </section>
-    <section class="v-sec">
+    <section id="five" class="v-sec">
         <div class="video-box">
             <div class="story-video">
                 <h1>A picture is worth a thousand words, but a video is priceless.</h1>
@@ -186,7 +187,7 @@
             </div>
         </div>
     </section>
-    <section class="contacte">
+    <section id="four" class="contacte">
         <div class="welcome">
             <div class="welcome-inscription">
                 <p>Contact</p>
@@ -204,15 +205,18 @@
                 </div>
             </div>
             <div class="contact-form">
-                <form class="contact-form-control">
+                <form id="contactForm" class="contact-form-control">
                     <div class="contact-insc">
                         Kontakt
                     </div>
-                    <input type="text" placeholder="Wpisz swój email">
-                    <input type="text" placeholder="Wpisz swoje imię">
-                    <textarea placeholder="Wpisz swoją wiadomość" rows="4" cols="50"></textarea>
+                    <input id="email" type="email" placeholder="Wpisz swój email">
+                    <p id="email-error" class="error"></p>
+                    <input id="name" type="text" placeholder="Wpisz swoje imię">
+                    <p id="name-error" class="error"></p>
+                    <textarea id="content" placeholder="Wpisz swoją wiadomość" rows="4" cols="50"></textarea>
+                    <p class="error" id="content-error"></p>
                     <div class="button">
-                        <a href="#">Wyślij</a>
+                        <button id="submitButton" disabled>Wyślij</button>
                     </div>
                 </form>
             </div>
@@ -222,12 +226,12 @@
         <div class="footer-left">
             <h3>Agroturystyka <span>Łosień</span></h3>
             <p class="footer-links">
-                <a href="#">Home</a> ·
-                <a href="#">Blog</a> ·
-                <a href="#">Pricing</a> ·
-                <a href="#">About</a> ·
-                <a href="#">Faq</a> ·
-                <a href="#">Contact</a>
+                <a href="#one">Home</a> ·
+                <a href="#two">About</a> ·
+                <a href="#three">Room</a> ·
+                <a href="#six">Gallery</a> ·
+                <a href="#five">Video</a> ·
+                <a href="#four">Contact</a>
             </p>
             <p class="footer-company-name">Company Name &copy; 2015</p>
         </div>
@@ -262,6 +266,7 @@
     <script src="lightbox.min.js"></script>
     <script src="main.js"></script>
     <script src="owl.carousel.min.js"></script>
+    <script src="form-validation.js"></script>
 </body>
 
 </html>
