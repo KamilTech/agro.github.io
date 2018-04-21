@@ -1203,6 +1203,14 @@ nav ul li a:hover {
     margin-bottom: 200px;
 }
 
+#mesagesv {
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    margin-top: 5px;
+    margin-left: 5px;
+    text-align: center;
+}
+
 @import url(https://fonts.googleapis.com/css?family=Montserrat:200);
 .snip1577 {
     font-family: 'Montserrat', Arial, sans-serif;

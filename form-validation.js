@@ -128,7 +128,7 @@ $(document).ready(function () {
             hide();
             formValid.content = true;
             checkValidation();
-            var testExp = new RegExp(/[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$/);
+            var testExp = new RegExp(/^[a-zA-Z0-9]+$/);
             if (!testExp.test(content)) {
                 msg('Niedozwolone znaki w polu wiadomośc');
                 formValid.content = false;

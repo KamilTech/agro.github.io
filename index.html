@@ -205,18 +205,17 @@
                 </div>
             </div>
             <div class="contact-form">
-                <form id="contactForm" class="contact-form-control">
-                    <div class="contact-insc">
-                        Kontakt
-                    </div>
-                    <input id="email" type="email" placeholder="Wpisz swój email">
+                <form id="contactForm" action="email.php" method="post" class="contact-form-control">
+                    <div class="contact-insc">Kontakt</div>
+                    <p id="mesagesv"></p>
+                    <input id="email" type="email" name="email" placeholder="Wpisz swój email">
                     <p id="email-error" class="error"></p>
-                    <input id="name" type="text" placeholder="Wpisz swoje imię">
+                    <input id="name" type="text" name="name" placeholder="Wpisz swoje imię">
                     <p id="name-error" class="error"></p>
-                    <textarea id="content" placeholder="Wpisz swoją wiadomość" rows="4" cols="50"></textarea>
+                    <textarea id="content" name="content" placeholder="Wpisz swoją wiadomość" rows="4" cols="50"></textarea>
                     <p class="error" id="content-error"></p>
                     <div class="button">
-                        <button id="submitButton" disabled>Wyślij</button>
+                        <button id="submitButton" name="submit" disabled>Wyślij</button>
                     </div>
                 </form>
             </div>

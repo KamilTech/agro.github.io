@@ -1,4 +1,33 @@
+'use strict';
 $(document).ready(function () {
+    $('#contactForm').on('submit', function (event) {
+        event.preventDefault();
+        let that = $(this),
+            url = that.attr('action'),
+            type = that.attr('method'),
+            data = {};
+
+        that.find('[name]').each(function () {
+            let that = $(this);
+            let name = that.attr('name'),
+                value = that.val();
+
+            data[name] = value;
+        });
+
+        $.ajax({
+            url: url,
+            type: type,
+            data: data,
+            success: function (response) {
+                console.log(response);
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                console.log(jqXHR, errorThrown);
+            }
+        });
+        return false;
+    });
     // Menu-toggle button
     $(document).ready(function () {
         $(".menu-icon").on("click", function () {
