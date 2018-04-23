@@ -243,6 +243,8 @@ nav ul li a:hover {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-transition: .02s;
+    transition: .02s;
 }
 
 .showcase .content {
@@ -268,6 +270,8 @@ header {
 .sh {
     position: relative;
     z-index: 1;
+    -webkit-transition: .02s;
+    transition: .02s;
 }
 
 .first-section {
@@ -1122,7 +1126,7 @@ header {
         padding: 0;
         margin: 0;
     }
-    
+
     .second-story {
         padding: 80px 60px;
     }
@@ -1145,19 +1149,19 @@ header {
         z-index: -1;
         width: 200px;
     }
-    
+
     .price-detail {
         width: 80%;
     }
-    
+
     .price-detail-cash-detail {
         padding-right: 10px;
     }
-    
+
     .price-detail:last-child {
         padding-left: 0;
     }
-    
+
     nav {
         background: white;
     }
@@ -1338,7 +1342,7 @@ header {
     .second-story {
         padding: 80px 30px;
     }
-    
+
     .price-detail {
         width: 95%;
         min-width: 20px;
