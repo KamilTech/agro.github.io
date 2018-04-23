@@ -232,6 +232,7 @@ nav ul li a:hover {
     height: 100vh;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     font-family: 'Playfair Display SC', serif;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -258,6 +259,20 @@ nav ul li a:hover {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+}
+
+header {
+    z-index: 0
+}
+
+.sh {
+    position: relative;
+    z-index: 1;
+}
+
+.first-section {
+    position: relative;
+    z-index: 2;
 }
 
 .showcase .content h1 {
@@ -348,7 +363,6 @@ nav ul li a:hover {
 
 .img {
     width: 50%;
-    z-index: -2;
 }
 
 .img img {
@@ -631,6 +645,116 @@ nav ul li a:hover {
     height: 100%;
 }
 
+.price {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.price-title {
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 35px;
+    color: #525252;
+    font-family: 'Playfair Display SC', serif;
+}
+
+.price-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.price-detail {
+    width: 33.33%;
+    min-width: 380px;
+    padding-bottom: 50px;
+}
+
+.price-container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.price-detail-cash {
+    border-left: 1px solid #ebebeb;
+    padding-left: 25px;
+    font-family: 'Playfair Display SC', serif;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.price-detail:last-child {
+    padding-left: 100px;
+}
+
+.price-detail-cash-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+
+.price-detail-cash-box-zl {
+    font-size: 15px;
+    color: #717171;
+    margin-left: 10px;
+    border-left: 1px solid #c6c6c6;
+    padding-left: 10px;
+}
+
+.price-detail-cash-box-value {
+    color: #717171;
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+
+.price-detail-cash-describe {
+    margin-top: 35px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6em;
+}
+
+.price-detail-cash-detail {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6em;
+    font-size: 10px;
+    padding-right: 40px;
+}
+
+.price h1 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 34px;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: #1c1c1c;
+    padding-bottom: 80px;
+}
+
+.price span {
+    color: #bf9b30;
+}
+
 .contact-box {
     background-color: white;
     padding-left: 20px;
@@ -735,16 +859,16 @@ nav ul li a:hover {
     padding-top: 100px;
 }
 
-.footer-distributed{
-	background-color: #292c2f;
-	-webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	width: 100%;
-	text-align: left;
-	padding: 55px 50px;
-	margin-top: 80px;
+.footer-distributed {
+    background-color: #292c2f;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    padding: 55px 50px;
+    margin-top: 80px;
     font-family: 'Montserrat', sans-serif;
     color: #e8e8e8;
     line-height: 1.6em;
@@ -753,156 +877,157 @@ nav ul li a:hover {
 
 .footer-distributed .footer-left,
 .footer-distributed .footer-center,
-.footer-distributed .footer-right{
-	display: inline-block;
-	vertical-align: top;
+.footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
 }
 
 /* Footer left */
 
-.footer-distributed .footer-left{
-	width: 40%;
+.footer-distributed .footer-left {
+    width: 40%;
 }
 
 /* The company logo */
 
-.footer-distributed h3{
-	color:  #ffffff;
-	font: normal 36px 'Playfair Display', serif;
-	margin: 0;
+.footer-distributed h3 {
+    color: #ffffff;
+    font: normal 36px 'Playfair Display', serif;
+    margin: 0;
 }
 
-.footer-distributed h3 span{
-	color: #bf9b30;
+.footer-distributed h3 span {
+    color: #bf9b30;
 }
 
 /* Footer links */
 
-.footer-distributed .footer-links{
-	color:  #ffffff;
-	margin: 20px 0 12px;
-	padding: 0;
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
 }
 
-.footer-distributed .footer-links a{
-	display:inline-block;
-	line-height: 1.8;
-	text-decoration: none;
-	color:  inherit;
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
 }
 
-.footer-distributed .footer-company-name{
-	color:  #8f9296;
-	font-size: 14px;
-	font-weight: normal;
-	margin: 0;
+.footer-distributed .footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
 }
 
 /* Footer Center */
 
-.footer-distributed .footer-center{
-	width: 35%;
+.footer-distributed .footer-center {
+    width: 35%;
 }
 
-.footer-distributed .footer-center i{
-	background-color:  #33383b;
-	color: #ffffff;
-	font-size: 25px;
-	width: 38px;
-	height: 38px;
-	border-radius: 50%;
-	text-align: center;
-	line-height: 42px;
-	margin: 10px 15px;
-	vertical-align: middle;
+.footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
 }
 
-.footer-distributed .footer-center i.fa-envelope{
-	font-size: 17px;
-	line-height: 38px;
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
 }
 
-.footer-distributed .footer-center p{
-	display: inline-block;
-	color: #ffffff;
-	vertical-align: middle;
-	margin:0;
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
 }
 
-.footer-distributed .footer-center p span{
-	display:block;
-	font-weight: normal;
-	font-size:14px;
-	line-height:2;
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
 }
 
-.footer-distributed .footer-center p a{
-	color:  #bf9b30;
-	text-decoration: none;;
+.footer-distributed .footer-center p a {
+    color: #bf9b30;
+    text-decoration: none;
+    ;
 }
 
 
 /* Footer Right */
 
-.footer-distributed .footer-right{
-	width: 20%;
+.footer-distributed .footer-right {
+    width: 20%;
 }
 
-.footer-distributed .footer-company-about{
-	line-height: 20px;
-	color:  #92999f;
-	font-size: 13px;
-	font-weight: normal;
-	margin: 0;
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
 }
 
-.footer-distributed .footer-company-about span{
-	display: block;
-	color:  #ffffff;
-	font-size: 14px;
-	font-weight: bold;
-	margin-bottom: 20px;
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
-.footer-distributed .footer-icons{
-	margin-top: 25px;
+.footer-distributed .footer-icons {
+    margin-top: 25px;
 }
 
-.footer-distributed .footer-icons a{
-	display: inline-block;
-	width: 35px;
-	height: 35px;
-	cursor: pointer;
-	background-color:  #33383b;
-	border-radius: 2px;
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
 
-	font-size: 20px;
-	color: #ffffff;
-	text-align: center;
-	line-height: 35px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
 
-	margin-right: 3px;
-	margin-bottom: 5px;
+    margin-right: 3px;
+    margin-bottom: 5px;
 }
 
 @media (max-width: 880px) {
 
-	.footer-distributed{
-		font: bold 14px sans-serif;
-	}
+    .footer-distributed {
+        font: bold 14px sans-serif;
+    }
 
-	.footer-distributed .footer-left,
-	.footer-distributed .footer-center,
-	.footer-distributed .footer-right{
-		display: block;
-		width: 100%;
-		margin-bottom: 40px;
-		text-align: center;
-	}
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
 
-	.footer-distributed .footer-center i{
-		margin-left: 0;
-	}
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
 
 }
 
@@ -915,7 +1040,7 @@ nav ul li a:hover {
     .content h1:first-child {
         font-size: 50px;
     }
-    
+
     .showcase .content p {
         padding-top: 75px;
         color: white;
@@ -993,6 +1118,11 @@ nav ul li a:hover {
         flex-direction: column;
     }
 
+    .price-container {
+        padding: 0;
+        margin: 0;
+    }
+    
     .second-story {
         padding: 80px 60px;
     }
@@ -1015,6 +1145,19 @@ nav ul li a:hover {
         z-index: -1;
         width: 200px;
     }
+    
+    .price-detail {
+        width: 80%;
+    }
+    
+    .price-detail-cash-detail {
+        padding-right: 10px;
+    }
+    
+    .price-detail:last-child {
+        padding-left: 0;
+    }
+    
     nav {
         background: white;
     }
@@ -1056,12 +1199,13 @@ nav ul li a:hover {
     }
 
     .first-section {
-        padding: 0 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
         margin: 0;
         margin-left: 15px;
         margin-right: 15px;
     }
-    
+
     .first-section .welcome-box-content,
     .first-section .welcome-box-content img,
     .first-section .welcome-box-content .img {
@@ -1085,15 +1229,15 @@ nav ul li a:hover {
     .contacte .welcome .welcome-inscription p {
         font-size: 16vw;
     }
-    
+
     .contacte .welcome .welcome-inscription {
         font-size: 32px;
     }
-    
+
     .contacte .welcome {
-        padding-top: 
+        padding-top:
     }
-    
+
     .contacte .welcome .word,
     .first-section .welcome .word {
         padding: 0;
@@ -1102,15 +1246,15 @@ nav ul li a:hover {
         left: 0;
         right: 0;
     }
-    
+
     .contact-describe {
         padding-top: 0px;
     }
-    
+
     .contact-form {
         width: 130%;
     }
-    
+
     .contacte .welcome,
     .first-section .welcome {
         position: relative;
@@ -1128,31 +1272,31 @@ nav ul li a:hover {
     .contacte .contact-box {
         padding-top: 50px;
     }
-    
+
     .contact-describe {
         margin-bottom: 50px;
         padding: 0;
         width: 100%;
     }
-    
+
     .contact-describe h1 {
         text-align: center;
     }
-    
+
     .video-box {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
     }
-    
+
     .video-box .story-video {
         width: 80%;
         max-width: none;
         padding-bottom: 50px;
         padding-top: 100px;
     }
-    
+
     .video-box .video {
         padding-top: 0;
         margin: 0;
@@ -1163,14 +1307,14 @@ nav ul li a:hover {
 }
 
 @media only screen and (max-width: 670px) {
-    
+
     .contacte .contact-box {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
     }
-    
+
     .contact-form {
         width: 100%;
         margin: 0;
@@ -1180,7 +1324,7 @@ nav ul li a:hover {
         padding-bottom: 35px;
         border-radius: 5px;
     }
-    
+
     .contact-insc {
         text-align: center;
     }
@@ -1190,17 +1334,23 @@ nav ul li a:hover {
     .welcome .welcome-inscription {
         display: none;
     }
-    
+
     .second-story {
         padding: 80px 30px;
+    }
+    
+    .price-detail {
+        width: 95%;
+        min-width: 20px;
     }
 }
 
 .first-section {
     padding-left: 20px;
     padding-right: 20px;
-    margin-top: 100px;
     margin-bottom: 200px;
+    padding-top: 100px;
+    background-color: white;
 }
 
 #mesagesv {

@@ -42,6 +42,20 @@ $(document).ready(function () {
             $('nav').removeClass('black');
         }
     });
+    $(window).scroll(function () {
+        let wScroll;
+        $(this).scrollTop() < 800 ? wScroll = $(this).scrollTop() : wScroll = 800;
+
+        $('.showcase .content').css({
+            'transform' : 'translate(0px, '+ wScroll/6 +'%)'
+        });
+        $('.showcase').css({
+            'filter': 'blur('+ wScroll/250 +'px)'
+        });
+        $('.sh').css({
+            'filter': 'grayscale('+ wScroll/5 +'%)'
+        });
+    });
     // Gallery
     $('.owl-carousel').owlCarousel({
         loop: true,
