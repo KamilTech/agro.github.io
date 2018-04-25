@@ -228,7 +228,7 @@ nav ul li a:hover {
 }
 
 .showcase {
-    background-image: url(images/bed-2562110_1920.jpg);
+    background-image: url(../images/bed-2562110_1920.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -243,8 +243,6 @@ nav ul li a:hover {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    -webkit-transition: .02s;
-    transition: .02s;
 }
 
 .showcase .content {
@@ -377,12 +375,12 @@ header {
 }
 
 .description {
-    width: 40%;
+    width: 50%;
     padding: 35px 50px 35px 35px;
     position: relative;
     background: white;
     min-height: 500px;
-    max-height: 500px;
+    max-height: 600px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -517,7 +515,7 @@ header {
 }
 
 .second-image {
-    background-image: url(images/hotel-2400364_1920.jpg);
+    background-image: url(../images/hotel-2400364_1920.jpg);
     width: 60%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -553,7 +551,7 @@ header {
 }
 
 .second-image:first-child {
-    background-image: url(images/interior-1026452_1920.jpg);
+    background-image: url(../images/interior-1026452_1920.jpg);
 }
 
 
@@ -567,17 +565,6 @@ header {
     color: #525252;
     margin-bottom: 50px;
     font-family: 'Playfair Display SC', serif;
-}
-
-.third-section p {
-    text-align: center;
-    padding-left: 15%;
-    padding-right: 15%;
-    padding-bottom: 50px;
-    font-family: 'Montserrat', sans-serif;
-    color: grey;
-    line-height: 1.6em;
-    font-size: 14px
 }
 
 .v-sec {
@@ -757,6 +744,88 @@ header {
 
 .price span {
     color: #bf9b30;
+}
+
+.tabele h1 {
+    line-height: 1.6em;
+    color: #505050;
+}
+
+.tabele th h1 {
+    font-size: 25px;
+    padding: 0;
+}
+
+.tabele td {
+    border: 1px solid #dedede;
+}
+
+.tabele {
+    overflow: hidden;
+    width: 90%;
+    margin: 0 auto;
+    display: table;
+}
+
+.tabele td,
+.tabele th {
+    text-align: center;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    padding-left: 2%;
+    font-family: 'Montserrat', sans-serif;
+    color: grey;
+    line-height: 1.6em;
+    font-size: 18px
+}
+
+.tabele tr td:nth-child(2) {
+    padding: 0;
+}
+
+.tabele tr:nth-child(odd) {}
+
+.tabele tr:nth-child(even) {}
+
+.tabele td {
+    border-bottom: none;
+}
+
+.tabele th {
+    background-color: #f5f5f5;
+}
+
+.tabele td:first-child {
+    color: #bf9b30;
+    border-left: none;
+}
+
+.price-desc {
+    padding-top: 50px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.price-desc-box {
+    width: 90%;
+    font-family: 'Montserrat', sans-serif;
+    color: grey;
+    line-height: 1.6em;
+    font-size: 14px
+}
+
+.price-desc-box span {
+    font-weight: 700;
+    color: grey;
 }
 
 .contact-box {
@@ -1150,6 +1219,10 @@ header {
         width: 200px;
     }
 
+    .tabele {
+        width: 95% !important;
+    }
+
     .price-detail {
         width: 80%;
     }
@@ -1218,6 +1291,11 @@ header {
     }
 
     .first-section .welcome-box-content .img {
+        width: 100%;
+    }
+
+    .first-section .welcome-box-content .description {
+        max-height: none;
         width: 100%;
     }
 
@@ -1311,6 +1389,9 @@ header {
 }
 
 @media only screen and (max-width: 670px) {
+    .tabele {
+        width: 100% !important;
+    }
 
     .contacte .contact-box {
         -webkit-box-orient: vertical;
@@ -1334,6 +1415,18 @@ header {
     }
 }
 
+@media only screen and (max-width: 560px) {
+    .tabele h1 {
+        line-height: 1em;
+        color: #505050;
+    }
+
+    .tabele th h1 {
+        font-size: 16px;
+        padding: 0;
+    }
+}
+
 @media only screen and (max-width: 435px) {
     .welcome .welcome-inscription {
         display: none;
@@ -1347,6 +1440,13 @@ header {
         width: 95%;
         min-width: 20px;
     }
+    .tabele tr td:nth-child(3){
+        padding: 0;
+    }
+    .tabele tr td:nth-child(2) {
+        padding-right: 10px;
+        padding-left: 10px;
+    }   
 }
 
 .first-section {

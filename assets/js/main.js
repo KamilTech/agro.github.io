@@ -53,9 +53,6 @@ $(document).ready(function () {
         $('.showcase').css({
             'filter': 'blur('+ wScroll/250 +'px)'
         });
-        $('.sh').css({
-            'filter': 'grayscale('+ wScroll/5 +'%)'
-        });
     });
     
     // Gallery
