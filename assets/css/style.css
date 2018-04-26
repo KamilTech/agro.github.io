@@ -228,7 +228,7 @@ nav ul li a:hover {
 }
 
 .showcase {
-    background-image: url(../images/bed-2562110_1920.jpg);
+    background-image: url(../images/logo-agro.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -370,8 +370,7 @@ header {
 .img img {
     width: 100%;
     vertical-align: middle;
-    -webkit-box-shadow: 0px 0px 15px -4px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 15px -4px rgba(0, 0, 0, 0.75);
+    border: 1px solid #f4f4f4;
 }
 
 .description {
@@ -553,7 +552,6 @@ header {
 .second-image:first-child {
     background-image: url(../images/interior-1026452_1920.jpg);
 }
-
 
 .third-section {
     padding-top: 100px;
@@ -815,12 +813,16 @@ header {
     align-items: center;
 }
 
+.price-desc em {
+    font-style: italic;
+}
+
 .price-desc-box {
     width: 90%;
     font-family: 'Montserrat', sans-serif;
     color: grey;
     line-height: 1.6em;
-    font-size: 14px
+    font-size: 16px
 }
 
 .price-desc-box span {
@@ -855,7 +857,6 @@ header {
 .contact-box .contact-info span {
     font-weight: 700;
     font-size: 16px;
-    padding-right: 10px;
 }
 
 .contact-info p {
@@ -941,7 +942,6 @@ header {
     width: 100%;
     text-align: left;
     padding: 55px 50px;
-    margin-top: 80px;
     font-family: 'Montserrat', sans-serif;
     color: #e8e8e8;
     line-height: 1.6em;
@@ -1036,7 +1036,39 @@ header {
 .footer-distributed .footer-center p a {
     color: #bf9b30;
     text-decoration: none;
-    ;
+}
+
+.footer-phone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.footer-phone-num {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; 
+}
+
+.footer-phone-num {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
 }
 
 
@@ -1084,6 +1116,11 @@ header {
 }
 
 @media (max-width: 880px) {
+    .footer-phone {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
 
     .footer-distributed {
         font: bold 14px sans-serif;
@@ -1107,6 +1144,16 @@ header {
 .icon {
     font-size: 30px !important;
     padding-right: 12px;
+}
+
+.map {
+    margin-top: 80px;
+}
+
+.map iframe{
+    width: 100%;
+    margin-bottom: -5px;
+    height: 60vh;
 }
 
 @media(max-width: 1005px) {
@@ -1316,10 +1363,6 @@ header {
         font-size: 32px;
     }
 
-    .contacte .welcome {
-        padding-top:
-    }
-
     .contacte .welcome .word,
     .first-section .welcome .word {
         padding: 0;
@@ -1444,9 +1487,15 @@ header {
         padding: 0;
     }
     .tabele tr td:nth-child(2) {
-        padding-right: 10px;
-        padding-left: 10px;
+        padding-right: 2px;
+        padding-left: 2px;
     }   
+}
+
+@media only screen and (max-width: 376px) {
+    .tabele tr td {
+        font-size: 14px;
+    }
 }
 
 .first-section {

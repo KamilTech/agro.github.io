@@ -42,21 +42,20 @@ $(document).ready(function () {
             $('nav').removeClass('black');
         }
     });
-    
+
     $(window).scroll(function () {
         let wScroll;
         $(this).scrollTop() < 800 ? wScroll = $(this).scrollTop() : wScroll = 800;
 
         $('.showcase .content').css({
-            'transform' : 'translate(0px, '+ wScroll/4 +'%)'
+            'transform': 'translate(0px, ' + wScroll / 4 + '%)'
         });
         $('.showcase').css({
-            'filter': 'blur('+ wScroll/250 +'px)'
+            'filter': 'blur(' + wScroll / 250 + 'px)'
         });
     });
-    
     // Gallery
-    $('.owl-carousel').owlCarousel({
+    $('.third-section .owl-carousel').owlCarousel({
         loop: true,
         margin: 10,
         responsiveClass: true,
