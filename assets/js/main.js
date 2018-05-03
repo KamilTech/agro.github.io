@@ -1,5 +1,7 @@
 'use strict';
 $(document).ready(function () {
+    var image = document.images[0];
+    console.log(image);
     $('#contactForm').on('submit', function (event) {
         event.preventDefault();
         let that = $(this),
@@ -44,9 +46,9 @@ $(document).ready(function () {
     });
     $(window).scroll(function () {
         let wScroll;
-        $(this).scrollTop() < 900 ? wScroll = $(this).scrollTop() : wScroll = 900;
+        $(this).scrollTop() < 1200 ? wScroll = $(this).scrollTop() : wScroll = 1200;
 
-        if (wScroll < 900) {
+        if (wScroll < 1200) {
             $('.showcase .content').css({
                 'transform': 'translate(0px, ' + (wScroll / 4).toFixed(4) + '%)'
             });

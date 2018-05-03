@@ -522,13 +522,13 @@ header {
 
 .second-image img {
     height: 70vh;
-    min-width: 100%;
+    min-width: 60vw;
     max-height: 800px;
 }
 
 .second-image .owl-theme {
     height: 70vh;
-    min-width: 100%;
+    min-width: 60vw;
     max-height: 800px;
 }
 
