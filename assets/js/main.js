@@ -42,21 +42,28 @@ $(document).ready(function () {
             $('nav').removeClass('black');
         }
     });
-
     $(window).scroll(function () {
         let wScroll;
-        $(this).scrollTop() < 800 ? wScroll = $(this).scrollTop() : wScroll = 800;
+        $(this).scrollTop() < 900 ? wScroll = $(this).scrollTop() : wScroll = 900;
 
-        $('.showcase .content').css({
-            'transform': 'translate(0px, ' + wScroll / 4 + '%)'
-        });
-        $('.showcase').css({
-            'filter': 'blur(' + wScroll / 250 + 'px)'
-        });
+        if (wScroll < 900) {
+            $('.showcase .content').css({
+                'transform': 'translate(0px, ' + (wScroll / 4).toFixed(4) + '%)'
+            });
+            $('.showcase').css({
+                'filter': 'blur(' + (wScroll / 250).toFixed(2) + 'px)'
+            });
+        }
+    });
+    // second image
+    $(".second-image .owl-carousel").owlCarousel({
+        dots: false,
+        margin: 0,
+        items: 1
     });
     // Gallery
     $('.third-section .owl-carousel').owlCarousel({
-        loop: true,
+        loop: false,
         margin: 10,
         responsiveClass: true,
         nav: true,

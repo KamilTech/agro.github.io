@@ -281,18 +281,18 @@ header {
     text-transform: uppercase;
     color: #ce9168;
     letter-spacing: 6px;
-    font-size: 5vw;
+    font-size: 4vw;
 }
 
 .showcase .content h1:first-child {
     color: white;
-    font-size: 8vw;
+    font-size: 7vw;
 }
 
 .showcase .content p {
     padding-top: 50px;
     color: #e8e8e8;
-    font-size: 14px;
+    font-size: 18px;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
 }
@@ -514,11 +514,22 @@ header {
 }
 
 .second-image {
-    background-image: url(../images/hotel-2400364_1920.jpg);
     width: 60%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.second-image img {
+    height: 70vh;
+    min-width: 100%;
+    max-height: 800px;
+}
+
+.second-image .owl-theme {
+    height: 70vh;
+    min-width: 100%;
+    max-height: 800px;
 }
 
 .second-content {
@@ -547,10 +558,6 @@ header {
 
 .second-story:last-child .h2 {
     color: black;
-}
-
-.second-image:first-child {
-    background-image: url(../images/interior-1026452_1920.jpg);
 }
 
 .third-section {
@@ -1061,7 +1068,7 @@ header {
     flex-direction: row;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center; 
+    align-items: center;
 }
 
 .footer-phone-num {
@@ -1150,7 +1157,7 @@ header {
     margin-top: 80px;
 }
 
-.map iframe{
+.map iframe {
     width: 100%;
     margin-bottom: -5px;
     height: 60vh;
@@ -1228,7 +1235,6 @@ header {
     }
     .second-section .second-image {
         width: 100%;
-        height: 500px;
     }
 
     .second-section-box .second-section {
@@ -1317,9 +1323,18 @@ header {
 
     .showcase .content p {
         text-align: center;
-        font-size: 13px;
+        font-size: 15px;
         padding-left: 50px;
         padding-right: 50px;
+        padding-top: 50px;
+    }
+
+    .showcase .content h1 {
+        font-size: 5vw;
+    }
+
+    .showcase .content h1:first-child {
+        font-size: 8vw;
     }
 
     .first-section {
@@ -1468,6 +1483,14 @@ header {
         font-size: 16px;
         padding: 0;
     }
+    .second-section .second-image {
+        width: 100%;
+        height: 300px;
+    }
+    
+    .second-section .second-image img {
+        height: 300px;
+    }
 }
 
 @media only screen and (max-width: 435px) {
@@ -1483,13 +1506,13 @@ header {
         width: 95%;
         min-width: 20px;
     }
-    .tabele tr td:nth-child(3){
+    .tabele tr td:nth-child(3) {
         padding: 0;
     }
     .tabele tr td:nth-child(2) {
         padding-right: 2px;
         padding-left: 2px;
-    }   
+    }
 }
 
 @media only screen and (max-width: 376px) {
