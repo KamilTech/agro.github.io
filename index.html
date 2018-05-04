@@ -14,6 +14,13 @@
 </head>
 
 <body>
+    <div id="overlay">
+        <div class="spinner"></div>
+        <div class="agro">
+            <h3>Agroturystyka</h3>
+            <p>J.T. KOZIEŁ W ŁOSIENIU</p>
+        </div>
+    </div>
 
     <header id="one">
         <nav>
@@ -44,8 +51,8 @@
             <div class="showcase">
                 <div class="content">
                     <h1>Agroturystyka</h1>
-                    <h1>J.T Kozieł w Łosieniu</h1>
-                    <p>Wymarzone miejsce na Twój odpoczynek</p>
+                    <h1>J.T. Kozieł w Łosieniu</h1>
+                    <p>Wymarzone miejsce na Twój odpoczynek...</p>
                     <a href="#two">Zobacz więcej</a>
                 </div>
             </div>
@@ -63,7 +70,7 @@
             <div class="three"></div>
         </div>
         <div class="welcome-box-content">
-            <div class="img"><img src="assets/images/O%20nas.jpg"></div>
+            <div class="img"><img class="lazyload" data-src="assets/images/O%20nas.jpg"></div>
             <div class="description">
 
                 <h1>O nas</h1>
@@ -91,10 +98,20 @@
                 </div>
             </div>
             <div class="second-image">
-                <div class="owl-carousel owl-theme">
+                <div class="owl-carousel owl-theme lazyload">
                     <figure class="snip1577">
                         <div class="item">
-                            <a href="assets/images/1.%20Muzeum%20Zabawek%20i%20Zabawy.jpg" data-lightbox="kid" data-title="Muzeum Zabawek i Zabawy"><img src="assets/images/1.%20Muzeum%20Zabawek%20i%20Zabawy.jpg"></a>
+                            <a href="assets/images/1.%20Muzeum%20Zabawek%20i%20Zabawy.jpg" data-lightbox="kid" data-title="Muzeum Zabawek i Zabawy"><img class="lazyload" data-src="assets/images/1.%20Muzeum%20Zabawek%20i%20Zabawy.jpg"></a>
+                            <figcaption>
+                                <h3>Muzeum Zabawek i Zabawy</h3>
+                                <h4>fot: własne</h4>
+                                <h2>(Przytrzymaj i przesuń w prawo aby zmienć zdjęcie)</h2>
+                            </figcaption>
+                        </div>
+                    </figure>
+                    <figure class="snip1577">
+                        <div class="item">
+                            <a href="assets/images/1.1%20Muzeum%20Zabawek%20i%20Zabawy.jpg" data-lightbox="kid" data-title="Muzeum Zabawek i Zabawy"><img class="lazyload" data-src="assets/images/1.1%20Muzeum%20Zabawek%20i%20Zabawy.jpg"></a>
                             <figcaption>
                                 <h3>Muzeum Zabawek i Zabawy</h3>
                                 <h4>fot: własne</h4>
@@ -103,16 +120,7 @@
                     </figure>
                     <figure class="snip1577">
                         <div class="item">
-                            <a href="assets/images/1.1%20Muzeum%20Zabawek%20i%20Zabawy.jpg" data-lightbox="kid" data-title="Muzeum Zabawek i Zabawy"><img src="assets/images/1.1%20Muzeum%20Zabawek%20i%20Zabawy.jpg"></a>
-                            <figcaption>
-                                <h3>Muzeum Zabawek i Zabawy</h3>
-                                <h4>fot: własne</h4>
-                            </figcaption>
-                        </div>
-                    </figure>
-                    <figure class="snip1577">
-                        <div class="item">
-                            <a href="assets/images/2.%20Park%20Rozrywki%20i%20Miniatur%20Sabat%20Krajno.jpg" data-lightbox="kid" data-title="Park Rozrywki i Miniatur „Sabat Krajno”"><img src="assets/images/2.%20Park%20Rozrywki%20i%20Miniatur%20Sabat%20Krajno.jpg"></a>
+                            <a href="assets/images/2.%20Park%20Rozrywki%20i%20Miniatur%20Sabat%20Krajno.jpg" data-lightbox="kid" data-title="Park Rozrywki i Miniatur „Sabat Krajno”"><img class="lazyload" data-src="assets/images/2.%20Park%20Rozrywki%20i%20Miniatur%20Sabat%20Krajno.jpg"></a>
                             <figcaption>
                                 <h3>Park Rozrywki i Miniatur „Sabat Krajno”</h3>
                                 <h4>fot: www.sabatkrajno.pl</h4>
@@ -121,7 +129,7 @@
                     </figure>
                     <figure class="snip1577">
                         <div class="item">
-                            <a href="assets/images/3.%20Geopark%20Kielce.jpg" data-lightbox="kid" data-title="Muzeum Zabawek i Zabawy"><img src="assets/images/3.%20Geopark%20Kielce.jpg"></a>
+                            <a href="assets/images/3.%20Geopark%20Kielce.jpg" data-lightbox="kid" data-title="Geopark Kielce"><img  class="lazyload" data-src="assets/images/3.%20Geopark%20Kielce.jpg"></a>
                             <figcaption>
                                 <h3>Geopark Kielce</h3>
                                 <h4>fot: www.geopark-kielce.pl</h4>
@@ -130,7 +138,7 @@
                     </figure>
                     <figure class="snip1577">
                         <div class="item">
-                            <a href="assets/images/4.%20Centrum%20Nauki%20Leonardo%20da%20Vinci.jpg" data-lightbox="kid" data-title="Centrum Nauki Leonardo da Vinci"><img src="assets/images/4.%20Centrum%20Nauki%20Leonardo%20da%20Vinci.jpg"></a>
+                            <a href="assets/images/4.%20Centrum%20Nauki%20Leonardo%20da%20Vinci.jpg" data-lightbox="kid" data-title="Centrum Nauki Leonardo da Vinci"><img class="lazyload" data-src="assets/images/4.%20Centrum%20Nauki%20Leonardo%20da%20Vinci.jpg"></a>
                             <figcaption>
                                 <h3>Centrum Nauki Leonardo da Vinci</h3>
                                 <h4>fot: www.cndavinci.pl</h4>
@@ -139,7 +147,7 @@
                     </figure>
                     <figure class="snip1577">
                         <div class="item">
-                            <a href="assets/images/4.1.%20Centrum%20Nauki%20Leonardo%20da%20Vinci.jpg" data-lightbox="kid" data-title="Centrum Nauki Leonardo da Vinci"><img src="assets/images/4.1.%20Centrum%20Nauki%20Leonardo%20da%20Vinci.jpg"></a>
+                            <a href="assets/images/4.1.%20Centrum%20Nauki%20Leonardo%20da%20Vinci.jpg" data-lightbox="kid" data-title="Centrum Nauki Leonardo da Vinci"><img class="lazyload" data-src="assets/images/4.1.%20Centrum%20Nauki%20Leonardo%20da%20Vinci.jpg"></a>
                             <figcaption>
                                 <h3>Centrum Nauki Leonardo da Vinci</h3>
                                 <h4>fot: www.cndavinci.pl</h4>
@@ -151,37 +159,20 @@
         </div>
         <div class="second-section">
             <div class="second-image">
-                <div class="owl-carousel owl-theme">
+                <div class="owl-carousel owl-theme lazyload">
                     <figure class="snip1577">
                         <div class="item">
-                            <a href="assets/images/7.%20G%C3%B3ra%20Miedzianka.jpg" data-lightbox="nature" data-title="Góra Miedzianka"><img src="assets/images/7.%20G%C3%B3ra%20Miedzianka.jpg"></a>
+                            <a href="assets/images/5.%20%C5%9Awi%C4%99tokrzyski%20Park%20Narodowy%20(Go%C5%82oborze).jpg" data-lightbox="nature" data-title="Świętokrzyski Park Narodowy (Gołoborze)"><img class="lazyload" data-src="assets/images/5.%20%C5%9Awi%C4%99tokrzyski%20Park%20Narodowy%20(Go%C5%82oborze).jpg"></a>
                             <figcaption>
-                                <h3>Góra Miedzianka</h3>
-                                <h4>fot: własne</h4>
-                            </figcaption>
-                        </div>
-                    </figure>
-                    <figure class="snip1577">
-                        <div class="item">
-                            <a href="assets/images/7.1.%20G%C3%B3ra%20Miedzianka.jpg" data-lightbox="nature" data-title="Góra Miedzianka"><img src="assets/images/7.1.%20G%C3%B3ra%20Miedzianka.jpg"></a>
-                            <figcaption>
-                                <h3>Góra Miedzianka</h3>
-                                <h4>fot: własne</h4>
-                            </figcaption>
-                        </div>
-                    </figure>
-                    <figure class="snip1577">
-                        <div class="item">
-                            <a href="assets/images/5.%20%C5%9Awi%C4%99tokrzyski%20Park%20Narodowy%20(%C5%81ysiec).jpg" data-lightbox="nature" data-title="Świętokrzyski Park Narodowy (Łysiec)"><img src="assets/images/5.%20%C5%9Awi%C4%99tokrzyski%20Park%20Narodowy%20(%C5%81ysiec).jpg"></a>
-                            <figcaption>
-                                <h3>Świętokrzyski Park Narodowy (Łysiec)</h3>
+                                <h3>Świętokrzyski Park Narodowy (Gołoborze)</h3>
                                 <h4>fot: www.swietokrzyskipn.org.pl</h4>
+                                <h2>(Przytrzymaj i przesuń w prawo aby zmienć zdjęcie)</h2>
                             </figcaption>
                         </div>
                     </figure>
                     <figure class="snip1577">
                         <div class="item">
-                            <a href="assets/images/6.%20Jaskinia%20Raj.jpg" data-lightbox="nature" data-title="Jaskinia Raj"><img src="assets/images/6.%20Jaskinia%20Raj.jpg"></a>
+                            <a href="assets/images/6.%20Jaskinia%20Raj.jpg" data-lightbox="nature" data-title="Jaskinia Raj"><img class="lazyload" data-src="assets/images/6.%20Jaskinia%20Raj.jpg"></a>
                             <figcaption>
                                 <h3>Jaskinia Raj</h3>
                                 <h4>fot: własne</h4>
@@ -190,7 +181,7 @@
                     </figure>
                     <figure class="snip1577">
                         <div class="item">
-                            <a href="assets/images/6.1.%20Jaskinia%20Raj.jpg" data-lightbox="nature" data-title="Jaskinia Raj"><img src="assets/images/6.1.%20Jaskinia%20Raj.jpg"></a>
+                            <a href="assets/images/6.1.%20Jaskinia%20Raj.jpg" data-lightbox="nature" data-title="Jaskinia Raj"><img class="lazyload" data-src="assets/images/6.1.%20Jaskinia%20Raj.jpg"></a>
                             <figcaption>
                                 <h3>Jaskinia Raj</h3>
                                 <h4>fot: własne</h4>
@@ -199,7 +190,25 @@
                     </figure>
                     <figure class="snip1577">
                         <div class="item">
-                            <a href="assets/images/8.%20Rezerwat%20Kadzielnia.jpg" data-lightbox="nature" data-title="Rezerwat Kadzielnia"><img src="assets/images/8.%20Rezerwat%20Kadzielnia.jpg"></a>
+                            <a href="assets/images/7.%20G%C3%B3ra%20Miedzianka.jpg" data-lightbox="nature" data-title="Góra Miedzianka"><img class="lazyload" data-src="assets/images/7.%20G%C3%B3ra%20Miedzianka.jpg"></a>
+                            <figcaption>
+                                <h3>Góra Miedzianka</h3>
+                                <h4>fot: własne</h4>
+                            </figcaption>
+                        </div>
+                    </figure>
+                    <figure class="snip1577">
+                        <div class="item">
+                            <a href="assets/images/7.1.%20G%C3%B3ra%20Miedzianka.JPG" data-lightbox="nature" data-title="Góra Miedzianka"><img class="lazyload" data-src="assets/images/7.1.%20G%C3%B3ra%20Miedzianka.JPG"></a>
+                            <figcaption>
+                                <h3>Góra Miedzianka</h3>
+                                <h4>fot: własne</h4>
+                            </figcaption>
+                        </div>
+                    </figure>
+                    <figure class="snip1577">
+                        <div class="item">
+                            <a href="assets/images/8.%20Rezerwat%20Kadzielnia.jpg" data-lightbox="nature" data-title="Rezerwat Kadzielnia"><img class="lazyload" data-src="assets/images/8.%20Rezerwat%20Kadzielnia.jpg"></a>
                             <figcaption>
                                 <h3>Rezerwat Kadzielnia</h3>
                                 <h4>fot: własne</h4>
@@ -208,7 +217,7 @@
                     </figure>
                     <figure class="snip1577">
                         <div class="item">
-                            <a href="assets/images/8.1%20Rezerwat%20Kadzielnia.jpg" data-lightbox="nature" data-title="Rezerwat Kadzielnia"><img src="assets/images/8.1%20Rezerwat%20Kadzielnia.jpg"></a>
+                            <a href="assets/images/8.1%20Rezerwat%20Kadzielnia.jpg" data-lightbox="nature" data-title="Rezerwat Kadzielnia"><img class="lazyload" data-src="assets/images/8.1%20Rezerwat%20Kadzielnia.jpg"></a>
                             <figcaption>
                                 <h3>Rezerwat Kadzielnia</h3>
                                 <h4>fot: własne</h4>
@@ -217,7 +226,7 @@
                     </figure>
                     <figure class="snip1577">
                         <div class="item">
-                            <a href="assets/images/9.%20D%C4%85b%20Bartek.jpg" data-lightbox="nature" data-title="Dąb Bartek (Zagnańsk)"><img src="assets/images/9.%20D%C4%85b%20Bartek.jpg"></a>
+                            <a href="assets/images/9.%20D%C4%85b%20Bartek.jpg" data-lightbox="nature" data-title="Dąb Bartek (Zagnańsk)"><img class="lazyload" data-src="assets/images/9.%20D%C4%85b%20Bartek.jpg"></a>
                             <figcaption>
                                 <h3>Dąb Bartek (Zagnańsk)</h3>
                                 <h4>fot: własne</h4>
@@ -245,19 +254,20 @@
                 </div>
             </div>
             <div class="second-image">
-                <div class="owl-carousel owl-theme">
+                <div class="owl-carousel owl-theme lazyload">
                     <figure class="snip1577">
                         <div class="item">
-                            <a href="assets/images/14.%20,%20Klasztor%20na%20%C5%9Awi%C4%99tym%20Krzy%C5%BCu.jpg" data-lightbox="monuments" data-title="Klasztor na Świętym Krzyżu"><img src="assets/images/14.%20,%20Klasztor%20na%20%C5%9Awi%C4%99tym%20Krzy%C5%BCu.jpg"></a>
+                            <a href="assets/images/14.%20,%20Klasztor%20na%20%C5%9Awi%C4%99tym%20Krzy%C5%BCu.jpg" data-lightbox="monuments" data-title="Klasztor na Świętym Krzyżu"><img class="lazyload" data-src="assets/images/14.%20,%20Klasztor%20na%20%C5%9Awi%C4%99tym%20Krzy%C5%BCu.jpg"></a>
                             <figcaption>
                                 <h3>Klasztor na Świętym Krzyżu</h3>
                                 <h4>fot: www.swietykrzyz.pl</h4>
+                                <h2>(Przytrzymaj i przesuń w prawo aby zmienć zdjęcie)</h2>
                             </figcaption>
                         </div>
                     </figure>
                     <figure class="snip1577">
                         <div class="item">
-                            <a href="assets/images/10.%20Muzeum%20Wsi%20Kieleckiej.jpg" data-lightbox="monuments" data-title="Muzeum Wsi Kieleckiej – Park Etnograficzny w Tokarni"><img src="assets/images/10.%20Muzeum%20Wsi%20Kieleckiej.jpg"></a>
+                            <a href="assets/images/10.%20Muzeum%20Wsi%20Kieleckiej.jpg" data-lightbox="monuments" data-title="Muzeum Wsi Kieleckiej – Park Etnograficzny w Tokarni"><img class="lazyload" data-src="assets/images/10.%20Muzeum%20Wsi%20Kieleckiej.jpg"></a>
                             <figcaption>
                                 <h3>Muzeum Wsi Kieleckiej – Park Etnograficzny w Tokarni</h3>
                                 <h4>fot: własne</h4>
@@ -266,7 +276,7 @@
                     </figure>
                     <figure class="snip1577">
                         <div class="item">
-                            <a href="assets/images/10.1.%20Muzeum%20Wsi%20Kieleckiej.jpg" data-lightbox="monuments" data-title="Muzeum Wsi Kieleckiej – Park Etnograficzny w Tokarni"><img src="assets/images/10.1.%20Muzeum%20Wsi%20Kieleckiej.jpg"></a>
+                            <a href="assets/images/10.1.%20Muzeum%20Wsi%20Kieleckiej.jpg" data-lightbox="monuments" data-title="Muzeum Wsi Kieleckiej – Park Etnograficzny w Tokarni"><img class="lazyload" data-src="assets/images/10.1.%20Muzeum%20Wsi%20Kieleckiej.jpg"></a>
                             <figcaption>
                                 <h3>Muzeum Wsi Kieleckiej – Park Etnograficzny w Tokarni</h3>
                                 <h4>fot: własne</h4>
@@ -275,7 +285,7 @@
                     </figure>
                     <figure class="snip1577">
                         <div class="item">
-                            <a href="assets/images/10.2.%20Muzeum%20Wsi%20Kieleckiej.jpg" data-lightbox="monuments" data-title="Muzeum Wsi Kieleckiej – Park Etnograficzny w Tokarni"><img src="assets/images/10.2.%20Muzeum%20Wsi%20Kieleckiej.jpg"></a>
+                            <a href="assets/images/10.2.%20Muzeum%20Wsi%20Kieleckiej.jpg" data-lightbox="monuments" data-title="Muzeum Wsi Kieleckiej – Park Etnograficzny w Tokarni"><img class="lazyload" data-src="assets/images/10.2.%20Muzeum%20Wsi%20Kieleckiej.jpg"></a>
                             <figcaption>
                                 <h3>Muzeum Wsi Kieleckiej – Park Etnograficzny w Tokarni</h3>
                                 <h4>fot: własne</h4>
@@ -284,7 +294,7 @@
                     </figure>
                     <figure class="snip1577">
                         <div class="item">
-                            <a href="assets/images/11.%20Pa%C5%82ac%20Biskup%C3%B3w%20Krakowskich.jpg" data-lightbox="monuments" data-title="Pałac Biskupów Krakowskich"><img src="assets/images/11.%20Pa%C5%82ac%20Biskup%C3%B3w%20Krakowskich.jpg"></a>
+                            <a href="assets/images/11.%20Pa%C5%82ac%20Biskup%C3%B3w%20Krakowskich.jpg" data-lightbox="monuments" data-title="Pałac Biskupów Krakowskich"><img class="lazyload" data-src="assets/images/11.%20Pa%C5%82ac%20Biskup%C3%B3w%20Krakowskich.jpg"></a>
                             <figcaption>
                                 <h3>Pałac Biskupów Krakowskich</h3>
                                 <h4>fot: www.mnki.pl/palac/</h4>
@@ -293,16 +303,16 @@
                     </figure>
                     <figure class="snip1577">
                         <div class="item">
-                            <a href="assets/images/11.1%20Pa%C5%82ac%20Biskup%C3%B3w%20Krakowskich.jpg" data-lightbox="monuments" data-title="Pałac Biskupów Krakowskich"><img src="assets/images/11.1%20Pa%C5%82ac%20Biskup%C3%B3w%20Krakowskich.jpg"></a>
+                            <a href="assets/images/11.1.%20Pa%C5%82ac%20Biskup%C3%B3w%20Krakowskich.jpg" data-lightbox="monuments" data-title="Pałac Biskupów Krakowskich"><img class="lazyload" data-src="assets/images/11.1.%20Pa%C5%82ac%20Biskup%C3%B3w%20Krakowskich.jpg"></a>
                             <figcaption>
                                 <h3>Pałac Biskupów Krakowskich</h3>
-                                <h4>fot: www.mnki.pl/palac/</h4>
+                                <h4>fot: własne</h4>
                             </figcaption>
                         </div>
                     </figure>
                     <figure class="snip1577">
                         <div class="item">
-                            <a href="assets/images/12.%20Pa%C5%82acyk%20Henryka%20Sienkiewicza.jpg" data-lightbox="monuments" data-title="Pałacyk Henryka Sienkiewicza w Oblęgorku"><img src="assets/images/12.%20Pa%C5%82acyk%20Henryka%20Sienkiewicza.jpg"></a>
+                            <a href="assets/images/12.%20Pa%C5%82acyk%20Henryka%20Sienkiewicza.jpg" data-lightbox="monuments" data-title="Pałacyk Henryka Sienkiewicza w Oblęgorku"><img class="lazyload" data-src="assets/images/12.%20Pa%C5%82acyk%20Henryka%20Sienkiewicza.jpg"></a>
                             <figcaption>
                                 <h3>Pałacyk Henryka Sienkiewicza w Oblęgorku</h3>
                                 <h4>fot: www.mnki.pl/sienkiewicz/</h4>
@@ -311,7 +321,7 @@
                     </figure>
                     <figure class="snip1577">
                         <div class="item">
-                            <a href="assets/images/13.%20Zamek%20w%20Ch%C4%99cinach.jpg" data-lightbox="monuments" data-title="Zamek Królewski w Chęcinach"><img src="assets/images/13.%20Zamek%20w%20Ch%C4%99cinach.jpg"></a>
+                            <a href="assets/images/13.%20Zamek%20w%20Ch%C4%99cinach.jpg" data-lightbox="monuments" data-title="Zamek Królewski w Chęcinach"><img class="lazyload" data-src="assets/images/13.%20Zamek%20w%20Ch%C4%99cinach.jpg"></a>
                             <figcaption>
                                 <h3>Zamek Królewski w Chęcinach</h3>
                                 <h4>fot: www.zamek.checiny.pl</h4>
@@ -329,7 +339,7 @@
             <div class="owl-carousel owl-theme">
                 <figure class="snip1577">
                     <div class="item">
-                        <a href="assets/images/o-nas.jpg" data-lightbox="hotel" data-title="First room"><img src="assets/images/o-nas.jpg"></a>
+                        <a href="assets/images/o-nas.jpg" data-lightbox="hotel" data-title="First room"><img class="lazyload" data-src="assets/images/o-nas.jpg"></a>
                         <figcaption>
                             <h3>First photo</h3>
                             <h4>Room 1</h4>
@@ -338,7 +348,7 @@
                 </figure>
                 <figure class="snip1577">
                     <div class="item">
-                        <a href="assets/images/zdj-1.jpg" data-lightbox="hotel" data-title="First room"><img src="assets/images/zdj-1.jpg"></a>
+                        <a href="assets/images/zdj-1.jpg" data-lightbox="hotel" data-title="First room"><img class="lazyload" data-src="assets/images/zdj-1.jpg"></a>
                         <figcaption>
                             <h3>First photo</h3>
                             <h4>Room 1</h4>
@@ -347,7 +357,7 @@
                 </figure>
                 <figure class="snip1577">
                     <div class="item">
-                        <a href="assets/images/zdj-2.jpg" data-lightbox="hotel" data-title="Second room"><img src="assets/images/zdj-2.jpg"></a>
+                        <a href="assets/images/zdj-2.jpg" data-lightbox="hotel" data-title="Second room"><img class="lazyload" data-src="assets/images/zdj-2.jpg"></a>
                         <figcaption>
                             <h3>Second photo</h3>
                             <h4>Room 2</h4>
@@ -356,7 +366,7 @@
                 </figure>
                 <figure class="snip1577">
                     <div class="item">
-                        <a href="assets/images/zdj-3.jpg" data-lightbox="hotel" data-title="My caption"><img src="assets/images/zdj-3.jpg"></a>
+                        <a href="assets/images/zdj-3.jpg" data-lightbox="hotel" data-title="My caption"><img class="lazyload" data-src="assets/images/zdj-3.jpg"></a>
                         <figcaption>
                             <h3>Lorem ipsum</h3>
                             <h4>dolor</h4>
@@ -365,7 +375,7 @@
                 </figure>
                 <figure class="snip1577">
                     <div class="item">
-                        <a href="assets/images/zdj-4.jpg" data-lightbox="hotel" data-title="My caption"><img src="assets/images/zdj-4.jpg"></a>
+                        <a href="assets/images/zdj-4.jpg" data-lightbox="hotel" data-title="My caption"><img class="lazyload" data-src="assets/images/zdj-4.jpg"></a>
                         <figcaption>
                             <h3>Lorem ipsum</h3>
                             <h4>dolor</h4>
@@ -374,7 +384,7 @@
                 </figure>
                 <figure class="snip1577">
                     <div class="item">
-                        <a href="assets/images/zdj-5.jpg" data-lightbox="hotel" data-title="My caption"><img src="assets/images/zdj-5.jpg"></a>
+                        <a href="assets/images/zdj-5.jpg" data-lightbox="hotel" data-title="My caption"><img class="lazyload" data-src="assets/images/zdj-5.jpg"></a>
                         <figcaption>
                             <h3>Lorem ipsum</h3>
                             <h4>dolor</h4>
@@ -383,7 +393,7 @@
                 </figure>
                 <figure class="snip1577">
                     <div class="item">
-                        <a href="assets/images/zdj-6.jpg" data-lightbox="hotel" data-title="My caption"><img src="assets/images/zdj-6.jpg"></a>
+                        <a href="assets/images/zdj-6.jpg" data-lightbox="hotel" data-title="My caption"><img class="lazyload" data-src="assets/images/zdj-6.jpg"></a>
                         <figcaption>
                             <h3>Lorem ipsum</h3>
                             <h4>dolor</h4>
@@ -392,7 +402,7 @@
                 </figure>
                 <figure class="snip1577">
                     <div class="item">
-                        <a href="assets/images/zdj-7.jpg" data-lightbox="hotel" data-title="My caption"><img src="assets/images/zdj-7.jpg"></a>
+                        <a href="assets/images/zdj-7.jpg" data-lightbox="hotel" data-title="My caption"><img class="lazyload" data-src="assets/images/zdj-7.jpg"></a>
                         <figcaption>
                             <h3>Lorem ipsum</h3>
                             <h4>dolor</h4>
@@ -401,7 +411,7 @@
                 </figure>
                 <figure class="snip1577">
                     <div class="item">
-                        <a href="assets/images/zdj-8.jpg" data-lightbox="hotel" data-title="My caption"><img src="assets/images/zdj-8.jpg"></a>
+                        <a href="assets/images/zdj-8.jpg" data-lightbox="hotel" data-title="My caption"><img class="lazyload" data-src="assets/images/zdj-8.jpg"></a>
                         <figcaption>
                             <h3>Lorem ipsum</h3>
                             <h4>dolor</h4>
@@ -410,7 +420,7 @@
                 </figure>
                 <figure class="snip1577">
                     <div class="item">
-                        <a href="assets/images/zdj-9.jpg" data-lightbox="hotel" data-title="My caption"><img src="assets/images/zdj-9.jpg"></a>
+                        <a href="assets/images/zdj-9.jpg" data-lightbox="hotel" data-title="My caption"><img class="lazyload" data-src="assets/images/zdj-9.jpg"></a>
                         <figcaption>
                             <h3>Lorem ipsum</h3>
                             <h4>dolor</h4>
@@ -419,25 +429,7 @@
                 </figure>
                 <figure class="snip1577">
                     <div class="item">
-                        <a href="assets/images/zdj-10.jpg" data-lightbox="hotel" data-title="My caption"><img src="assets/images/zdj-10.jpg"></a>
-                        <figcaption>
-                            <h3>Lorem ipsum</h3>
-                            <h4>dolor</h4>
-                        </figcaption>
-                    </div>
-                </figure>
-                <figure class="snip1577">
-                    <div class="item">
-                        <a href="assets/images/zdj-11.jpg" data-lightbox="hotel" data-title="My caption"><img src="assets/images/zdj-11.jpg"></a>
-                        <figcaption>
-                            <h3>Lorem ipsum</h3>
-                            <h4>dolor</h4>
-                        </figcaption>
-                    </div>
-                </figure>
-                <figure class="snip1577">
-                    <div class="item">
-                        <a href="assets/images/zdj-12.jpg" data-lightbox="hotel" data-title="My caption"><img src="assets/images/zdj-12.jpg"></a>
+                        <a href="assets/images/zdj-10.jpg" data-lightbox="hotel" data-title="My caption"><img class="lazyload" data-src="assets/images/zdj-10.jpg"></a>
                         <figcaption>
                             <h3>Lorem ipsum</h3>
                             <h4>dolor</h4>
@@ -455,7 +447,7 @@
                 <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</h3>
             </div>
             <div class="video">
-                
+
             </div>
         </div>
     </section>
@@ -519,7 +511,7 @@
     <section id="four" class="contacte">
         <div class="welcome">
             <div class="welcome-inscription">
-                <p>Contact</p>
+                <p>Kontakt</p>
             </div>
             <h2 class="word"><span>Napisz do <p>nas</p></span></h2>
         </div>
@@ -587,7 +579,8 @@
         </div>
         <div class="footer-right">
             <p class="footer-company-about">
-                <span>O nas</span> W NASZEJ AGROTURYSTYCE ZNAJDZIESZ WSZYSTKO ŻEBY WYPOCZĄĆ
+                <span>O nas</span> Wymarzone miejsce na Twój odpoczynek...
+
             </p>
         </div>
     </footer>
@@ -597,6 +590,7 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/form-validation.js"></script>
+    <script src="assets/js/lazysizes.js"></script>
 </body>
 
 </html>

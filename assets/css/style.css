@@ -135,6 +135,87 @@ table {
 
 /*START*/
 
+.agro h3 {
+    padding-top: 5px;
+    margin-bottom: -30px;
+    font-weight: 700;
+    font-size: 34px;
+}
+
+.agro p {
+    text-transform: uppercase;
+    color: #bf9b30;
+    font-size: 15px;
+    letter-spacing: 6px;
+    margin-top: 35px;
+}
+
+.agro {
+    position: absolute;
+    top: -230px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 230px;
+    height: 80px;
+    text-align: center;
+}
+
+.spinner {
+    width: 80px;
+    height: 80px;
+
+    border: 2px solid #f3f3f3;
+    border-top: 3px solid #bf9b30;
+    border-radius: 100%;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    -webkit-animation: spin 1s infinite linear;
+
+    animation: spin 1s infinite linear;
+}
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+#overlay {
+    height: 100%;
+    width: 100%;
+    background: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    -webkit-transition: all 3s;
+    transition: all 3s;
+}
+
 body {
     overflow-x: hidden;
 }
@@ -520,16 +601,22 @@ header {
     background-position: center;
 }
 
+.second-image figcaption h2 {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6em;
+    font-size: 14px
+}
+
 .second-image img {
-    height: 70vh;
+    height: 75vh;
     min-width: 60vw;
-    max-height: 800px;
+    max-height: 850px;
 }
 
 .second-image .owl-theme {
-    height: 70vh;
+    height: 75vh;
     min-width: 60vw;
-    max-height: 800px;
+    max-height: 900px;
 }
 
 .second-content {
@@ -1230,6 +1317,7 @@ header {
         padding: 0;
         margin-bottom: -50px;
     }
+
     .second-section .second-story {
         width: 100%;
     }
@@ -1242,6 +1330,16 @@ header {
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
+    }
+
+    .second-section:nth-child(2) {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse
     }
 
     .price-container {
@@ -1487,7 +1585,7 @@ header {
         width: 100%;
         height: 300px;
     }
-    
+
     .second-section .second-image img {
         height: 300px;
     }
