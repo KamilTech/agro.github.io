@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:800|Playfair+Display|Playfair+Display+SC');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:800|Playfair+Display|Playfair+Display+SC|Merienda+One');
 /*RESET STYLE*/
 
 html,
@@ -212,8 +212,6 @@ table {
     left: 0;
     top: 0;
     z-index: 999;
-    -webkit-transition: all 3s;
-    transition: all 3s;
 }
 
 body {
@@ -309,12 +307,11 @@ nav ul li a:hover {
 }
 
 .showcase {
-    background-image: url(../images/logo-agro.jpg);
+    background-image: url(../images/received_967216173446000.jpeg);
     height: 100vh;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    font-family: 'Playfair Display SC', serif;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -324,6 +321,8 @@ nav ul li a:hover {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    font-weight: bold;
+    font-family: 'Merienda One', cursive;
 }
 
 .showcase .content {
@@ -362,20 +361,20 @@ header {
     text-transform: uppercase;
     color: #ce9168;
     letter-spacing: 6px;
-    font-size: 4vw;
+    font-size: 3vw;
+    padding-bottom: 15px;
 }
 
 .showcase .content h1:first-child {
     color: white;
-    font-size: 7vw;
+    font-size: 6vw;
 }
 
 .showcase .content p {
     padding-top: 50px;
-    color: #e8e8e8;
+    color: #fafafa;
     font-size: 18px;
     text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .showcase a {
@@ -385,7 +384,6 @@ header {
     color: white;
     padding: 20px 25px 20px 25px;
     border: 1px solid white;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .showcase a:hover {
@@ -572,7 +570,7 @@ header {
     text-transform: uppercase;
     font-size: 32px;
     font-weight: 900;
-    margin: 0 0 2em;
+    margin: 0 0 20px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
 }
@@ -624,7 +622,7 @@ header {
     font-family: 'Montserrat', sans-serif;
     color: #e8e8e8;
     line-height: 1.6em;
-    font-size: 14px
+    font-size: 13px
 }
 
 .second-story:last-child {
@@ -726,6 +724,11 @@ header {
 .video-box .video img {
     width: 100%;
     height: 100%;
+}
+
+.video iframe {
+    width: 100%;
+    height: 315px;
 }
 
 .price {
@@ -1049,13 +1052,9 @@ header {
     vertical-align: top;
 }
 
-/* Footer left */
-
 .footer-distributed .footer-left {
     width: 40%;
 }
-
-/* The company logo */
 
 .footer-distributed h3 {
     color: #ffffff;
@@ -1066,8 +1065,6 @@ header {
 .footer-distributed h3 span {
     color: #bf9b30;
 }
-
-/* Footer links */
 
 .footer-distributed .footer-links {
     color: #ffffff;
@@ -1088,8 +1085,6 @@ header {
     font-weight: normal;
     margin: 0;
 }
-
-/* Footer Center */
 
 .footer-distributed .footer-center {
     width: 35%;
@@ -1165,9 +1160,6 @@ header {
     flex-direction: column
 }
 
-
-/* Footer Right */
-
 .footer-distributed .footer-right {
     width: 20%;
 }
@@ -1199,12 +1191,10 @@ header {
     cursor: pointer;
     background-color: #33383b;
     border-radius: 2px;
-
     font-size: 20px;
     color: #ffffff;
     text-align: center;
     line-height: 35px;
-
     margin-right: 3px;
     margin-bottom: 5px;
 }
@@ -1596,6 +1586,16 @@ header {
         display: none;
     }
 
+    .showcase .content h1 {
+        text-align: center;
+        font-size: 20px;
+        word-wrap: break-word;
+    }
+    
+    .showcase .content h1:first-child {
+        font-size: 8vw;
+    }
+    
     .second-story {
         padding: 80px 30px;
     }

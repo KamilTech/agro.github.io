@@ -1,13 +1,14 @@
-var overlay = document.getElementById("overlay");
-
-window.addEventListener('load', function(){
-  overlay.style.display = 'none';
-});
-
 'use strict';
 $(document).ready(function () {
+    let overlay = document.getElementById("overlay");
+
+    $(window).on("load", function () {
+        setTimeout(() => {
+            overlay.style.display = 'none';
+        }, 500);
+    });
+
     var image = document.images[0];
-    console.log(image);
     $('#contactForm').on('submit', function (event) {
         event.preventDefault();
         let that = $(this),
@@ -51,16 +52,21 @@ $(document).ready(function () {
         }
     });
     $(window).scroll(function () {
-        let wScroll;
-        $(this).scrollTop() < 1200 ? wScroll = $(this).scrollTop() : wScroll = 1200;
+        let isMobile = false;
 
-        if (wScroll < 1200) {
-            $('.showcase .content').css({
-                'transform': 'translate(0px, ' + (wScroll / 4).toFixed(4) + '%)'
-            });
-            $('.showcase').css({
-                'filter': 'blur(' + (wScroll / 250).toFixed(2) + 'px)'
-            });
+        if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) isMobile === true;
+        if (isMobile === false) {
+            let wScroll;
+            $(this).scrollTop() < 1200 ? wScroll = $(this).scrollTop() : wScroll = 1200;
+
+            if (wScroll < 1200) {
+                $('.showcase .content').css({
+                    'transform': 'translate(0px, ' + (wScroll / 4).toFixed(4) + '%)'
+                });
+                $('.showcase').css({
+                    'filter': 'blur(' + (wScroll / 250).toFixed(2) + 'px)'
+                });
+            }
         }
     });
     // second image
