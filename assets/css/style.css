@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:800|Playfair+Display|Playfair+Display+SC|Merienda+One');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:800|Playfair+Display|Playfair+Display+SC|Arima+Madurai');
 /*RESET STYLE*/
 
 html,
@@ -322,7 +322,7 @@ nav ul li a:hover {
     -ms-flex-align: center;
     align-items: center;
     font-weight: bold;
-    font-family: 'Merienda One', cursive;
+    font-family: 'Arima Madurai', cursive;
 }
 
 .showcase .content {
@@ -414,10 +414,10 @@ header {
 
 .welcome .word {
     text-align: center;
-    font-size: 35px;
+    font-size: 40px;
     color: #525252;
     margin-bottom: 100px;
-    font-family: 'Playfair Display SC', serif;
+    font-family: 'Arima Madurai', cursive;
 }
 
 .contacte .welcome .word {
@@ -469,6 +469,7 @@ header {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    font-family: 'Arima Madurai', cursive;
 }
 
 .description h1 {
@@ -476,11 +477,11 @@ header {
     letter-spacing: 6px;
     text-transform: uppercase;
     margin-bottom: 20px;
+    font-size: 20px;
 }
 
 .description h2 {
     font-size: 32px;
-    font-family: 'Playfair Display SC', serif;
 }
 
 .description .story {
@@ -559,7 +560,7 @@ header {
 .second-story {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    background: #222831;
+    background: #213304;
     width: 40%;
     line-height: 1.71;
     padding: 80px 60px;
@@ -576,7 +577,7 @@ header {
 }
 
 .h2::after {
-    background: #00ADB5;
+    background: #bf9b30;
     content: "";
     display: block;
     height: 2px;
@@ -634,7 +635,6 @@ header {
     font-family: 'Montserrat', sans-serif;
     color: grey;
     line-height: 1.6em;
-    font-size: 14px
 }
 
 .second-story:last-child .h1 {
@@ -651,10 +651,10 @@ header {
 
 .third-section h1 {
     text-align: center;
-    font-size: 35px;
+    font-size: 40px;
     color: #525252;
     margin-bottom: 50px;
-    font-family: 'Playfair Display SC', serif;
+    font-family: 'Arima Madurai', cursive;
 }
 
 .v-sec {
@@ -735,6 +735,7 @@ header {
     padding-top: 100px;
     padding-bottom: 100px;
     border-bottom: 1px solid #e8e8e8;
+    font-family: 'Arima Madurai', cursive;
 }
 
 .price-title {
@@ -742,7 +743,6 @@ header {
     padding-bottom: 50px;
     font-size: 35px;
     color: #525252;
-    font-family: 'Playfair Display SC', serif;
 }
 
 .price-box {
@@ -780,7 +780,6 @@ header {
 .price-detail-cash {
     border-left: 1px solid #ebebeb;
     padding-left: 25px;
-    font-family: 'Playfair Display SC', serif;
     padding-top: 15px;
     padding-bottom: 15px;
 }
@@ -829,7 +828,6 @@ header {
 
 .price h1 {
     text-align: center;
-    font-family: 'Playfair Display', serif;
     font-size: 34px;
     line-height: 48px;
     text-transform: uppercase;
@@ -934,7 +932,7 @@ header {
 }
 
 .contact-box .contact-describe h1 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Arima Madurai', cursive;
     font-size: 34px;
     line-height: 48px;
     text-transform: none;
