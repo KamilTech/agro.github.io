@@ -51,24 +51,21 @@ $(document).ready(function () {
             $('nav').removeClass('black');
         }
     });
-    $(window).scroll(function () {
-        let isMobile = false;
+     if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
+        $(window).scroll(function () {
+                let wScroll;
+                $(this).scrollTop() < 1200 ? wScroll = $(this).scrollTop() : wScroll = 1200;
 
-        if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) isMobile === true;
-        if (isMobile === false) {
-            let wScroll;
-            $(this).scrollTop() < 1200 ? wScroll = $(this).scrollTop() : wScroll = 1200;
-
-            if (wScroll < 1200) {
-                $('.showcase .content').css({
-                    'transform': 'translate(0px, ' + (wScroll / 4).toFixed(4) + '%)'
-                });
-                $('.showcase').css({
-                    'filter': 'blur(' + (wScroll / 250).toFixed(2) + 'px)'
-                });
-            }
-        }
-    });
+                if (wScroll < 1200) {
+                    $('.showcase .content').css({
+                        'transform': 'translate(0px, ' + (wScroll / 4).toFixed(4) + '%)'
+                    });
+                    $('.showcase').css({
+                        'filter': 'blur(' + (wScroll / 250).toFixed(2) + 'px)'
+                    });
+                }
+        });
+    }
     // second image
     $(".second-image .owl-carousel").owlCarousel({
         dots: false,
